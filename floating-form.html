@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.hide').hide()
+            setTimeout(() => {
+                $('.hide').show()
+                $('.hide').animate({ top: '400px' }, "slow");
+            }, 3000)
+
+        });
+    </script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <form class="hide" style="background:#98bf21;height:100px;width:200px;position:fixed;top:800px;z-index: 10;">
+        Enter Your Email:
+        <input type="email" />
+        <br />
+        Enter Your Phone number:
+        <input type="number" />
+    </form>
+</body>
+
+</html>
